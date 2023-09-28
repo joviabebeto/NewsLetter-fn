@@ -112,4 +112,18 @@ label{
         padding: 3rem;
         flex-direction: column;
       }
+      .news-container{
+     
+        width: 50%;
+        height: 50%;
+       
+
+      }
+      .card{
+    
+
+
+        display: flex;
+        justify-content: center;
+      }
     
