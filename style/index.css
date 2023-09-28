@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:" poppins" ,sans-serif ;
+}
+form{
+  
+    margin-top: 2%;
+    position: absolute;
+    
+    left: 50%;
+    text-align: center;
+    width: 35%;
+    transform: translate(-50%, 0%);
+    padding: 3rem;
+    border-radius: 0.8rem;
+    box-shadow: 1px 3px 3px rgba(10, 7, 139, 0.384);
+   
+}
+.group{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+label{
+    width: 35%;
+  
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+.btn{
+    padding: 1rem 3rem;
+    border-radius: 0.8rem;
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    color: rgb(12, 10, 10);
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+  
+    background-color: rgba(8, 8, 206, 0.449);
+  
+
+     }
+     .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.387);
+      }
+      .btn:active {
+        transform: translateY(-2px);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+      }
+      header{
+        background-color: rgb(223, 223, 228);
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20rem;
+      }
+      header h1{
+        color: blueviolet;
+      }
+      .tel{
+        font-size: 1.5rem;
+      }
+      .main-content{
+       padding: 3rem;
+       font-size: 1.4rem;
+       color: brown;
+       font-weight: 500px;
+       top: 20rem;
+      }
+      .main-content h3{
+        font-size: 1.5rem;
+        position: relative;
+
+      }
+      .main-content p{
+       font-size: 1.4rem;
+   
+   
+      }
+      .main-content span{
+        position: absolute;
+        letter-spacing: 0;
+        /* top: 15px; */
+        padding: 0 0.2rem;
+        color: blueviolet;
+        text-transform: uppercase;
+        
+        font-size: 1.2rem;
+  
+      }
+      .adress{
+        font-size: 1.6rem;
+      }
+      .text{
+      
+        padding: 3rem;
+        font-size: 1.3rem;
+      }
+      .card{
+        padding: 3rem;
+        flex-direction: column;
+      }
+    
