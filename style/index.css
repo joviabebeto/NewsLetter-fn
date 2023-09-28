@@ -1,129 +1,253 @@
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family:" poppins" ,sans-serif ;
+body {
+  font-family: "Roboto", sans-serif;
 }
-form{
+.signlog {
+  margin: 10rem auto;
+  max-width: 50rem;
+}
+form {
+  background-color: #eeeeee;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.386);
+}
+.group {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+label {
+  font-size: 1.8rem;
+  width: 35%;
+  display: inline-block;
+  font-weight: 400;
+  color: #363636;
+}
+input {
+  width: 64%;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.564);
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid white;
+  background-color: rgba(4, 0, 255, 0.725);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.142);
+}
+input[type="submit"]:hover {
+  transform: translate(0px, -3px);
+  background-color: rgba(4, 0, 255, 0.605);
+}
+input[type="submit"]:active {
+  transform: translate(0px, -2px);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.021);
+}
+.icon-position {
+  position: relative;
+}
+.icon-position i {
+  position: absolute;
+  top: 50%;
+  font-size: 1.6rem;
+  transform: translate(0%, -50%);
+  right: 3%;
+}
+header {
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.263);
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+header p {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  color: blueviolet;
+  font-weight: 500;
+}
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.address i {
+  font-size: 1.4rem;
+  color: black;
+}
+.tel i {
+  color: black;
+}
+.main-content {
+  padding: 3rem;
+}
+.main-content {
+  position: relative;
+
+  display: inline-block;
+}
+.main-content h3 {
+  font-size: 1.6rem;
+  color: rgb(204, 4, 4);
+  letter-spacing: 1.2px;
+}
+.main-content span {
+  position: absolute;
+  letter-spacing: 0;
+  bottom: 15px;
+
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  width: 100%;
+  left: 3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: blueviolet;
+}
+.main-content span::before {
+  content: "";
+  width: 10%;
+  height: 2px;
+  margin: 0 0.8rem;
+
+  background-color: red;
+  text-align: left;
+  display: inline-block;
+}
+.main-content span::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  background-color: red;
+  top: 0;
+  margin: 0 0.8rem 0;
+  text-align: right;
+  display: inline-block;
+}
+.news-container {
+  padding: 3rem;
+  width: 100%;
+  background-color: #f1f1f1f1;
+}
+.news {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+}
+.card .text {
+  width: 100%;
+  padding: 1.5rem;
+}
+.card .date {
+  color: blueviolet;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: right;
+}
+.card h4 {
+  font-size: 2.2rem;
+  padding: 1.5rem 0;
+  color: #363636;
+}
+.card .description {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: justify;
+}
+form {
+ 
+
+  margin-top: 2%;
+  position: absolute;
   
-    margin-top: 2%;
-    position: absolute;
-    
-    left: 50%;
-    text-align: center;
-    width: 35%;
-    transform: translate(-50%, 0%);
-    padding: 3rem;
-    border-radius: 0.8rem;
-    box-shadow: 1px 3px 3px rgba(10, 7, 139, 0.384);
-   
+  left: 50%;
+  text-align: center;
+  width: 35%;
+
+  transform: translate(-50%, 0%);
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 1px 3px 3px rgba(12, 12, 12, 0.384);
 }
-.group{
-    width: 100%;
-    margin-bottom: 2rem;
+h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
-label{
-    width: 35%;
+label {
   
-    font-weight: 400;
-    font-size: 1.9rem;
+  
+  font-size: 1.8rem;
+  display: block;
+  text-align: left;
 }
+input {
+  
+  
+  padding: 0.5rem;
+  width: 100%;
+}
+.group {
+ 
+  
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
 .btn{
-    padding: 1rem 3rem;
-    border-radius: 0.8rem;
-    display: block;
-    width: 100%;
-    font-size: 1.8rem;
-    color: rgb(12, 10, 10);
-    cursor: pointer;
-    transition: all 0.3s;
-    overflow: hidden;
-  
-    background-color: rgba(8, 8, 206, 0.449);
-  
+  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  overflow: hidden;
 
-     }
-     .btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.387);
-      }
-      .btn:active {
-        transform: translateY(-2px);
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
-      }
-      header{
-        background-color: rgb(223, 223, 228);
-        padding: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20rem;
-      }
-      header h1{
-        color: blueviolet;
-      }
-      .tel{
-        font-size: 1.5rem;
-      }
-      .main-content{
-       padding: 3rem;
-       font-size: 1.4rem;
-       color: brown;
-       font-weight: 500px;
-       top: 20rem;
-      }
-      .main-content h3{
-        font-size: 1.5rem;
-        position: relative;
-
-      }
-      .main-content p{
-       font-size: 1.4rem;
-   
-   
-      }
-      .main-content span{
-        position: absolute;
-        letter-spacing: 0;
-        /* top: 15px; */
-        padding: 0 0.2rem;
-        color: blueviolet;
-        text-transform: uppercase;
-        
-        font-size: 1.2rem;
-  
-      }
-      .adress{
-        font-size: 1.6rem;
-      }
-      .text{
-      
-        padding: 3rem;
-        font-size: 1.3rem;
-      }
-      .card{
-        padding: 3rem;
-        flex-direction: column;
-      }
-      .news-container{
-     
-        width: 50%;
-        height: 50%;
-       
-
-      }
-      .card{
-    
-
-
-        display: flex;
-        justify-content: center;
-      }
-    
+  background-color: rgba(7, 7, 199, 0.449);
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.387);
+}
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+}
