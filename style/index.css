@@ -43,7 +43,7 @@ input[type="submit"] {
   width: 100%;
   padding: 1rem;
   border: 1px solid white;
-  background-color: rgba(4, 0, 255, 0.725);
+  background-color: rgba(5, 4, 31, 0.725);
   color: white;
   font-size: 1.8rem;
   font-weight: 500;
@@ -55,7 +55,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   transform: translate(0px, -3px);
-  background-color: rgba(4, 0, 255, 0.605);
+  background-color: rgba(10, 9, 44, 0.605);
 }
 input[type="submit"]:active {
   transform: translate(0px, -2px);
@@ -187,67 +187,38 @@ a {
   letter-spacing: 0;
   text-align: justify;
 }
-form {
- 
-
-  margin-top: 2%;
+.spinner{
+  width: 30px;
+  height: 30px;
   position: absolute;
-  
+  top: 50%;
   left: 50%;
-  text-align: center;
-  width: 35%;
-
-  transform: translate(-50%, 0%);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transform: translate(-50%,-50%);
+  border: solid rgb(177, 174, 174);
+  border-top: 4px solid blueviolet;
+  display: none;
+  
+  
+}
+@keyframes spin {
+  0%{
+    transform: translate(-50%,-50%) rotate(0deg)
+  }
+  100%{
+    transform: translate(-50%,-50%) rotate(360deg)
+  }
+}
+.nav-links{
+  background-color: blue;
+  font-size: 1.5rem;
   padding: 3rem;
-  border-radius: 0.8rem;
-  box-shadow: 1px 3px 3px rgba(12, 12, 12, 0.384);
-}
-h3 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-label {
   
+}
+.link{
   
-  font-size: 1.8rem;
-  display: block;
-  text-align: left;
-}
-input {
-  
-  
-  padding: 0.5rem;
-  width: 100%;
-}
-.group {
- 
-  
-  margin-bottom: 1.5rem;
-}
-
-p {
-  font-size: 1.4rem;
-}
-
-.btn{
-  padding: 1rem 3rem;
-  border-radius: 0.8rem;
-  display: block;
-  width: 100%;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s;
-  overflow: hidden;
-
-  background-color: rgba(7, 7, 199, 0.449);
-}
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.387);
-}
-.btn:active {
-  transform: translateY(-2px);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+  display: flex;
+  gap: 25rem;
+  list-style: none;
 }
