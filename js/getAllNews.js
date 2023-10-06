@@ -3,7 +3,7 @@ const spinner = document.querySelector(".spinner");
 spinner.style.display = "block";
 newsIndex.style.display = "none";
 
-fetch("https://pear-thankful-sheep.cyclic.cloud/api/v1/news")
+fetch("https://rich-gray-yak-tux.cyclic.app/api/v1/news")
   .then((response) => {
     return response.json();
   })
@@ -18,7 +18,7 @@ fetch("https://pear-thankful-sheep.cyclic.cloud/api/v1/news")
       <div class="text">
       <p class="date">${news.postedAt}</p>
         <h4>${news.newsMainTitle}</h4>
-        <p class="description">${news.newsDescription}</p>
+        <p class="description">${news.newsSummaryDescription}</p>
         <div class="butt">
               <a href="./singleNews.html?id=${news._id}" class="readmore">Readmore....</a>
             </div>

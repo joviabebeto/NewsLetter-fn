@@ -152,15 +152,16 @@ a {
 .news-container {
   padding: 3rem;
   width: 100%;
-  background-color: #f1f1f1f1;
+
 }
 .news {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .card {
-  background-color: white;
+  padding: 3rem;
+  background-color: rgb(114, 111, 111);
 }
 
 .card img {
@@ -178,8 +179,8 @@ a {
 }
 .card h4 {
   font-size: 2.2rem;
-  padding: 1.5rem 0;
-  color: #363636;
+  padding: 1rem 0;
+  color: #000000;
 }
 .card .description {
   font-size: 1.6rem;
@@ -221,4 +222,14 @@ a {
   display: flex;
   gap: 25rem;
   list-style: none;
+}
+.singleNewsContainer{
+ 
+  
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+.like{
+  padding: 3rem;
+  font-size: 1.5rem;
 }
