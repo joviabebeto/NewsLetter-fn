@@ -4,7 +4,7 @@ const idParams = window.location.href.split("?id=")[1];
 const spinner = document.querySelector(".spinner");
 spinner.style.display = "block";
 singleNewsContainer.style.display = "none";
-fetch(`https://rich-gray-yak-tux.cyclic.app/api/v1/news/${idParams}`)
+fetch(`https://sapphire-salmon-coat.cyclic.cloud/api/v1/news/${idParams}`)
   .then((resp) => {
     return resp.json();
   })

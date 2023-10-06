@@ -3,7 +3,7 @@ const spinner = document.querySelector(".spinner");
 spinner.style.display = "block";
 newsIndex.style.display = "none";
 
-fetch("https://rich-gray-yak-tux.cyclic.app/api/v1/news")
+fetch("https://sapphire-salmon-coat.cyclic.cloud/api/v1/news")
   .then((response) => {
     return response.json();
   })
