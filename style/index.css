@@ -229,7 +229,11 @@ a {
   padding: 3rem;
   font-size: 1.5rem;
 }
-.like{
+.like-container{
+
+  
+  display: flex;
+  gap: 1rem;
   padding: 3rem;
   font-size: 1.5rem;
 }
