@@ -161,7 +161,7 @@ a {
 }
 .card {
   padding: 3rem;
-  background-color: rgb(114, 111, 111);
+  background-color: rgb(170, 169, 173);
 }
 
 .card img {
@@ -254,7 +254,7 @@ a {
  width: 100%;
 }
 .nav-admin{
-  background-color: #000000;
+  background-color: #afa0a0;
 }
 .admin-links{
   list-style-type: none;
@@ -272,7 +272,7 @@ a {
 .admin-links a{
  font-size: 1.5rem;
  text-decoration: none;
- color: rgb(255, 249, 249);
+ color: rgb(0, 0, 0);
 }
 .admin-links li:hover{
   background-color: rgb(141, 158, 175);
@@ -283,8 +283,10 @@ a {
 }
 table{
   gap: 100px;
+  margin-top: 3rem auto;
 }
 tr{
+  
   padding: 3rem;
   font-size: 1.4rem;
  
@@ -295,4 +297,9 @@ tr{
   font-size: 1.4rem;
   margin: 2rem;
   text-align: right;
+}
+.likeNews{
+ display: flex;
+ gap: 2rem;
+  padding: 2rem;
 }

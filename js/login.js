@@ -15,10 +15,7 @@ form.addEventListener("submit",(e)=>{
     },
     body: JSON.stringify(data),
   };
-  fetch(
-    `https://sapphire-buffalo-wear.cyclic.cloud//api/v1/user/login`,
-    setPostman
-  )
+  fetch(`https://odd-dog-jumpsuit.cyclic.app/api/v1/user/login`,setPostman)
     .then((res) => {
       return res.json();
     })
