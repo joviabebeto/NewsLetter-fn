@@ -1,5 +1,6 @@
 const newsIndex = document.querySelector(".news");
 const spinner = document.querySelector(".spinner");
+
 spinner.style.display = "block";
 newsIndex.style.display = "none";
 

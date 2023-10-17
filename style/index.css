@@ -43,7 +43,7 @@ input[type="submit"] {
   width: 100%;
   padding: 1rem;
   border: 1px solid white;
-  background-color: rgba(5, 4, 31, 0.725);
+  background-color: rgba(3, 2, 2, 0.725);
   color: white;
   font-size: 1.8rem;
   font-weight: 500;
@@ -281,19 +281,19 @@ a {
 .table-admin{
  padding: 1.5rem;
 }
-table{
-  gap: 100px;
-  margin-top: 3rem auto;
+.tableusers{
+  width: 800px;
+  margin: 5rem auto;
+  border-collapse: collapse;
 }
-tr{
-  
-  padding: 3rem;
-  font-size: 1.4rem;
- 
- 
+tr,
+th,
+td{
+  border: 1px solid rgb(17, 12, 12);
+  padding: 1.5rem;
+  font-size: 1.8rem;
 }
 .Post {
- 
   font-size: 1.4rem;
   margin: 2rem;
   text-align: right;
@@ -302,4 +302,23 @@ tr{
  display: flex;
  gap: 2rem;
   padding: 2rem;
+}
+.newsForm {
+  width: 800px;
+  margin: 5rem auto;
+}
+.newsForm input {
+  margin-bottom: 1.5rem;
+}
+.table{
+
+    width: 800px;
+    margin: 5rem auto;
+    border-collapse: collapse;
+  
+}
+.category{
+  padding: 3rem;
+  margin: 5rem auto;
+  border-collapse: collapse;
 }
