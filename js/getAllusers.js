@@ -11,28 +11,15 @@ fetch(api,{
 .then((response)=>{
     return response.json()
 }).then((data)=>{
-    console.log(data)
-})
-
-// fetch(api, {
-//   headers: {
-//     "auth-token": token,
-//   },
-// })
-//   .then((resp) => {
-//     return resp.json();
-//   })
-//   .then((data) => {
-//     console.log(data)
-//     data.data.map((user, index) => {
-//       table.innerHTML += `
-//         <tr>
-//         <td>${index + 1}</td>
-//         <td>${user.firstName}</td>
-//         <td>${user.lastName}</td>
-//         <td>${user.email}</td>
-//         <td>${user.role}</td>
-//         </tr>
-//         `;
-//     });
-//   });
+    data.data.map((user, index) => {
+             table.innerHTML += `
+                <tr>
+                <td>${index + 1}</td>
+            <td>${user.firstName}</td>
+                <td>${user.lastName}</td>
+             <td>${user.email}</td>
+            <td>${user.role}</td>
+                </tr>
+         `;
+            });   });
+   

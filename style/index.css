@@ -299,6 +299,7 @@ td{
   text-align: right;
 }
 .likeNews{
+font-size: 1.5rem;
  display: flex;
  gap: 2rem;
   padding: 2rem;
@@ -321,4 +322,9 @@ td{
   padding: 3rem;
   margin: 5rem auto;
   border-collapse: collapse;
+}
+.commentNews{
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
 }

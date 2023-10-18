@@ -28,7 +28,7 @@ addNewsForm.addEventListener("submit", (e) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-auth-token": token,
+      "auth-token": token,
     },
     body: JSON.stringify(data),
   };
