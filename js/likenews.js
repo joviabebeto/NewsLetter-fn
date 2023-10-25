@@ -1,5 +1,5 @@
-const likenews=document.querySelector(".likeNews")
-likenews.addEventListener=("onclick",(e) =>{
+const like=document.querySelector(".likeNews")
+like.addEventListener=("onclick",(e) =>{
 e.preventDefault();
 if(this.state.likeIcone!=`red`){
 fetch(`https://odd-dog-jumpsuit.cyclic.app/api/v1/news/like/651d12d70a88ecfce3d124e7`,{

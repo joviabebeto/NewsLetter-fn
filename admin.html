@@ -19,26 +19,13 @@
     </ul>
 </div>
 <div class="contents-admin">
-    <table class="tableusers">
-        <tr>
-            <th>No</th>
-            <th>firstName</th>
-            <th>LastName</th>
-            <th>Email</th>
-            <th>Role</th>
-        </tr>
-    </table>
     <form action="" class="newsForm">
         <label for="newsMainTitle">newsMainTitle</label>
         <input type="text" name="newsMainTitle" id="newsMainTitle" />
         <label for="newsTitle">newsTitle</label>
         <input type="text" name="newsTitle" id="newsTitle" />
         <label for="newsSummaryDescription">newsSummaryDescription</label>
-        <input
-          type="text"
-          name="newsSummaryDescription"
-          id="newsSummaryDescription"
-        />
+        <input type="text" name="newsSummaryDescription" id="newsSummaryDescription"/>
         <label for="newsDescription">newsDescription</label>
         <input type="text" name="newsDescription" id="newsDescription" />
         <label for="newsImage">newsImage</label>
@@ -49,17 +36,42 @@
         <input type="text" name="publisher" id="publisher" />
         <input type="submit" value="Post" />
       </form>
-    <table class="category">
-        <th>No</th>
-        <th>category name</th>
+      <table class="getAllNews">
+        <tr>
+          <th>NO</th>
+          <th>Main Tile</th>
+          <th>Title</th>
+          <th>Summary Description</th>
+          <th>Publisher</th>
+          <th colspan="2">Action</th>
+        </tr>
+        <div class="spinner"></div>
+      </table>
+      <table class="tableusers">
+        <tr>
+          <th>NO</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>Role</th>
+        </tr>
+      </table>
 
-    </table>
+      <table class="category">
+        <tr>
+          <th>No</th>
+          <th>category name</th>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<script src="./js/getAllusers.js"></script>
+
+<script src="./js/getAllUsers.js"></script>
+
 <script src="./js/addNews.js"></script>
 <script src="./js/dataToDisplay.js"></script>
 <script src="./js/getAllCategory.js"></script>
+<script src="./js/updateNews.js"></script>
 </body>
 </html>
