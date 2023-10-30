@@ -1,5 +1,5 @@
 const categoryTable = document.querySelector(".category");
-fetch("https://odd-dog-jumpsuit.cyclic.app/api/v1/category")
+fetch("https://vast-pear-pangolin-tam.cyclic.app/api/v1/category")
   .then((res) => {
     return res.json();
   })

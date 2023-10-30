@@ -23,7 +23,7 @@ addNewsForm.addEventListener("submit", (e) => {
   };
   console.log(data);
 
-  const api = "https://odd-dog-jumpsuit.cyclic.app/api/v1/news";
+  const api = "https://vast-pear-pangolin-tam.cyclic.app/api/v1/news";
   const setPostman = {
     method: "POST",
     headers: {

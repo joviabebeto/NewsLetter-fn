@@ -4,7 +4,7 @@ const idParams = window.location.href.split("?id=")[1];
 const spinner = document.querySelector(".spinner");
 spinner.style.display = "block";
 singleNewsContainer.style.display = "none";
-fetch(`https://odd-dog-jumpsuit.cyclic.app/api/v1/news/${idParams}`)
+fetch(`https://vast-pear-pangolin-tam.cyclic.app/api/v1/news/${idParams}`)
   .then((resp) => {
     return resp.json();
   })
@@ -26,6 +26,7 @@ fetch(`https://odd-dog-jumpsuit.cyclic.app/api/v1/news/${idParams}`)
     </div>
     <div class="conts">
     <h4>${data.data.newsTitle}</h4>
+
     </div>
     
     `;
