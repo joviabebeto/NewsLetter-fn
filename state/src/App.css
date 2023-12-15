@@ -1,0 +1,45 @@
+.steps {
+  width: 500px;
+  padding: 30px;
+  background: #eee;
+  margin: 100px auto;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.numbers div {
+  background: #ccc;
+  padding: 20px;
+  border-radius: 50%;
+}
+.message {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 50px 0;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.active {
+  color: white;
+
+  background-color: #5060f2 !important;
+}
+button {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: rgb(7, 6, 6);
+  border: none;
+  background-color: #50f281;
+}
+.btn-cont {
+  width: 100%;
+  text-align: right;
+  margin: 5px 10px 0 0;
+}
